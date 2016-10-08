@@ -1,0 +1,71 @@
+.player
+	background: transparentize($color_dark_555, .3)
+	color: #FFF
+	padding: 10px
+	width: 500px
+	float: left
+	display: flex
+	border-radius: 20px
+	.current-time, .total-time
+		margin: auto
+	.buffer
+		display: inline-block
+		width: 75%
+		height: 4px
+		background: $color_dark_222
+		margin: auto
+		position: relative
+		#playhead
+			position: absolute
+			border-radius: 100%
+			top: -3px
+			left: -5px
+			transition: .1s
+			// width: 10px
+			// height: 10px
+			// background: #EEE
+			// cursor: -webkit-grab
+		span
+			position: absolute
+			top: 0
+			left: 0
+			height: 4px
+			background: $color_light
+			display: block
+			transition: .1s
+
+
+.controls
+	width: 150px
+	float: left
+	display: flex
+	margin-left: 10px
+	> span
+		width: 35px
+		height: 35px
+		margin: auto
+		border: 1px solid #FFF
+		border-radius: 100%
+		color: #FFF
+		text-align: center
+		display: flex
+		cursor: pointer
+		transition: .2s
+		&:hover
+			background: transparentize(#fff, .8)
+			&.play
+				background: $color_light / .9
+				transform: scale(1.1)
+		> i
+			margin: auto
+	.prev > i
+		left: -2px
+		position: relative
+	.play > i.fa-play, .next > i
+		right: -2px
+		position: relative
+	.play
+		background: $color_light
+		color: #FFF
+		border: 1px solid $color_light
+

@@ -1,0 +1,64 @@
+// Index
+.owl-carousel.owl-loaded
+	direction: ltr
+	.owl-controls
+		position: absolute
+		top: 41%
+		left: 0
+		width: 100%
+		flex-direction: column
+		display: none
+	&:hover .owl-controls
+		display: flex
+		.owl-nav
+			margin: auto
+			width: 100%
+			display: flex
+			> div
+				margin: auto
+				i
+					color: #000
+					background: #fff
+					padding: 26px 30px
+					border-radius: 50%
+					opacity: 0.3
+			.owl-prev
+				margin-left: -28px
+			.owl-next
+				margin-right: -28px
+
+.Slider
+	background: url(../../img/slid.png)
+	background-size: cover
+	height: 70vh
+	section
+		height: 100%
+		display: flex
+		direction: rtl
+		p:first-of-type
+			margin: 0
+			color: #fff
+			font-size: 22px
+			padding: 0 15px
+			border-left: 2px solid $color_yellow
+			border-right: 2px solid $color_yellow
+			display: inline
+		h1
+			color: #fff
+			font-size: 55px
+		span
+			color: #fff
+			font-size: 25px
+			a
+				text-decoration: none
+				color: #fff
+				background: $color_yellow
+				padding: 5px
+				margin-left: 10px
+
+.contant
+	min-height: 40vh
+	background: #f5f5f5
+	.player
+		@extend .container
+		display: flex

@@ -1,0 +1,107 @@
+.top-player
+	padding: 20px 0
+	background: url('../../img/slid.png')
+#cardsWarpper
+	background: #FFF
+	margin-top: 20px
+	padding: 5px
+	.left-side
+		width: 73%
+		float: left
+		.single-card
+			text-align: center
+			width: 31.333%
+			margin: 1%
+			padding-bottom: 15px
+			border-bottom: 1px solid #EEE
+			float: left
+			.image
+				img
+					width: 100%
+			.heading
+				h3
+					margin: 10px auto
+				p
+					padding-top: 0
+					color: $color_light
+					font-weight: bold
+			.details-btn
+				a
+					display: inline-block
+					color: #FFF
+					background: $color_light
+					padding: 10px 20px
+					text-decoration: none
+					transition: .14s
+					&:hover
+						background: $color_light / .9
+	.right-side
+		width: 25%
+		float: right
+		> h1
+			text-align: center
+			font-weight: 100
+			border:
+				right: 3px solid #f76d2b
+				left: 3px solid #f76d2b
+
+		.programes-list	
+			list-style-type: none
+			padding: 5px
+			margin: 0
+			background: $color_dark_333
+			margin-top: 40px
+			a
+				color: #FFF
+				text-decoration: none
+				display: block
+				padding: 10px 3px
+				font-size: 20px
+				transition: .14s
+				i
+					color: $color_light
+					font-size: 22px
+					margin-left: 5px
+					margin-right: 5px
+				&.active
+					background: $color_light
+					i
+						color: $color_dark_333
+					&:hover
+						background: $color_light / .9
+				&:hover
+					background: $color_dark_333 / .9
+
+		.ads
+			background: #DDD
+			text-align: center
+			height: 200px
+			line-height: 200px
+			font-size: 25px
+		.update
+			background: $color_dark_333
+			height: 200px
+			display: flex
+			.update-programs
+				background: $color_light
+				border-radius: 25px
+				display: inline-block
+				padding: 10px
+				font-size: 20px
+				margin: auto
+				transition: .2s
+				&:hover
+					background: $color_light / .9
+					cursor: pointer
+				i
+					background: #FFF
+					border-radius: 22px
+					float: left
+					width: 27px
+					height: 27px
+					text-align: center
+					margin-right: 15px
+					margin-top: 1px
+					color: #999
+					line-height: 27px
+		

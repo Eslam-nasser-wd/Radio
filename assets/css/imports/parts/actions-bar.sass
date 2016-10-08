@@ -1,0 +1,73 @@
+.actions-bar
+	padding: 15px 10px
+	.indicators
+		list-style-type: none
+		padding: 0
+		margin: 0
+		float: right
+		width: 30%
+		text-align: left
+		display: flex
+		flex-direction: row-reverse
+		padding-top: 15px
+		li
+			display: inline-block
+			font-size: 16px
+			margin: auto
+			i
+				color: #f76d2b
+				margin-left: 5px
+	.filters
+		list-style-type: none
+		padding: 0
+		margin: 0
+		float: left
+		width: 60%
+		display: flex
+		flex-direction: row-reverse
+		li
+			display: inline-block
+			font-size: 18px
+			float: left
+			margin: auto
+			color: #666
+			label
+				margin-left: 10px
+			select
+				padding: 6px 20px
+				border-radius: 25px
+				border: 1px solid #DDD
+				font-size: 17px
+				&:focus
+					outline: 0
+		.toggle-views
+			display: inline-block
+			color: #666
+			width: 85px
+			height: 35px
+			.single-toggler
+				display: inline-block
+				line-height: 20px
+				background: #FFF
+				width: 50%
+				text-align: center
+				height: 35px
+				padding-top: 10px
+				font-size: 16px
+				cursor: pointer
+				transition: .14s
+				&:hover
+					background: #FFF / 1.01
+				&:first-of-type
+					border-radius: 0 20px 20px 0
+					float: right
+				&:last-of-type
+					float: left
+					border-right: 1px solid #DDD
+					border-radius: 20px 0 0 20px
+				&.active
+					color: $color_light
+		label[for="toggler"]
+			position: relative
+			top: -10px
+
