@@ -28,6 +28,67 @@ $(document).ready(function(){
         $("html,body").animate({ scrollTop:0} , 600)
     });
 	
+	//
+	$('.iconmob').click(function(){
+		$('.MainNav .menu').toggleClass('show');
+	});
+	
+	//
+	function fix(){
+		var windo = $(window).width();
+	
+		if (windo <= 768) {
+
+			$(window).scroll(function(){
+
+				var sc = $(window).scrollTop() ,
+					hit = $('.right-side').outerHeight(),
+					fot = $('footer').outerHeight(),
+					kkk= $('#cardsWarpper').offset().top ,
+					hhh = ($("footer").offset().top - hit),
+					ofst = (($("footer").offset().top - hit) - fot);
+
+
+
+				if(sc > kkk){
+					if (sc > hhh) {
+
+						$(".right-side").css({
+
+							position : 'relative',
+
+							top : (ofst)
+
+						});
+
+					} else {
+
+						$(".right-side").css({
+
+							position : 'fixed',
+
+							top : '33px'
+
+						});
+					}
+				}else{
+					$(".right-side").css({
+
+						position : 'relative',
+
+						top : '0'
+
+					});
+				}
+
+			});
+		}
+	}fix();
+	
+	$(window).resize(function(){
+		fix();
+	});
+	
 });
 
 

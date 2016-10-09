@@ -25,6 +25,7 @@
 					<a href="contact.php"><li>تواصل معنا</li></a>
 				</ul>
 			</div>
+			<i class="fa fa-bars iconmob"></i>
 		</div>
 	</div>
 </div>

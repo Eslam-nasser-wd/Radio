@@ -3,7 +3,7 @@
 <?php include './assets/header.php' ?>
 
 <!-- Programmes -->
-<div class="top-player cf">
+<div class="top-player Programme cf">
 	<div class="container">
 		<?php include 'assets/parts/player.php' ?>
 	</div>
