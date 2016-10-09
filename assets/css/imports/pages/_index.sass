@@ -1,64 +1,143 @@
 // Index
-.owl-carousel.owl-loaded
-	direction: ltr
-	.owl-controls
-		position: absolute
-		top: 41%
-		left: 0
-		width: 100%
-		flex-direction: column
-		display: none
-	&:hover .owl-controls
-		display: flex
-		.owl-nav
+#index
+	background: #FFF
+	padding: 10px
+	box-shadow: $shadow_flat
+	margin-top: 20px
+	top: -60px
+	position: relative
+	z-index: 1
+	.top-player
+		background: #FFF
+		.player
+			width: 85%
 			margin: auto
-			width: 100%
-			display: flex
-			> div
-				margin: auto
-				i
-					color: #000
-					background: #fff
-					padding: 26px 30px
-					border-radius: 50%
-					opacity: 0.3
-			.owl-prev
-				margin-left: -28px
-			.owl-next
-				margin-right: -28px
+			float: none
+			background: $color_dark_555
+		.controls
+			float: none
+			margin: auto
+			margin-top: 15px
+			> span
+				border: 1px solid $color_dark_222
+				color: $color_dark_222
+			.play
+				background: $color_light
+				color: #FFF
+				border: 1px solid $color_light
 
-.Slider
-	background: url(../../img/slid.png)
-	background-size: cover
-	height: 70vh
-	section
-		height: 100%
-		display: flex
-		direction: rtl
-		p:first-of-type
+	.songs-list
+		width: 50%
+		margin: auto
+		margin-top: 20px
+		ul
+			list-style-type: none
+			padding: 0
 			margin: 0
-			color: #fff
-			font-size: 22px
-			padding: 0 15px
-			border-left: 2px solid $color_yellow
-			border-right: 2px solid $color_yellow
-			display: inline
-		h1
-			color: #fff
-			font-size: 55px
-		span
-			color: #fff
-			font-size: 25px
-			a
-				text-decoration: none
-				color: #fff
-				background: $color_yellow
-				padding: 5px
-				margin-left: 10px
+			li
+				padding: 15px 10px
+				border-bottom: 1px solid #666
+				display: flex
+				transition: .2s
+				&:hover
+					background: transparentize($color_light, .9)
+				> span
+					display: inline-block
+					margin: auto
+					> i
+						color: $color_light
+						cursor: pointer
+				.indicator
+					width: 15px
+					height: 15px
+					border-radius: 100%
+					background: $color_light
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						top: -3px
+						left: -3px
+						width: 19px
+						height: 19px
+						border: 1px solid $color_light
+						border-radius: 100%
 
-.contant
-	min-height: 40vh
-	background: #f5f5f5
-	.player
-		@extend .container
+	.show-all
 		display: flex
+		margin-top: 25px
+		.all-programs
+			background: $color_dark_555
+			color: #FFF
+			border-radius: 25px
+			display: inline-block
+			padding: 10px
+			font-size: 20px
+			margin: auto
+			transition: .2s
+			&:hover
+				background: $color_dark_555 / .9
+				cursor: pointer
+			i
+				background: $color_light
+				border-radius: 22px
+				float: left
+				width: 27px
+				height: 27px
+				text-align: center
+				margin-right: 15px
+				margin-top: 1px
+				color: #FFF
+				line-height: 27px
+				&:before
+					position: relative
+					left: -2px
+
+
+.all-programmes
+	text-align: center
+	.label
+		background: $color_dark_555
+		color: #FFF
+		display: inline-block
+		padding: 5px 10px
+	h2
+		display: inline-block
+		padding:
+			right: 15px
+			left: 15px
+		border:
+			right: 3px solid $color_light
+			left: 3px solid $color_light
+
+	.single-card
+		text-align: center
+		width: 31.333%
+		margin: 1%
+		padding-bottom: 15px
+		border-bottom: 1px solid #EEE
+		float: left
+		.image
+			img
+				width: 100%
+		.heading
+			h3
+				margin: 10px auto
+			p
+				padding-top: 0
+				color: $color_light
+				font-weight: bold
+		.details-btn
+			a
+				display: inline-block
+				color: #FFF
+				background: $color_light
+				padding: 10px 20px
+				text-decoration: none
+				transition: .14s
+				&:hover
+					background: $color_light / .9
+
+
+
+

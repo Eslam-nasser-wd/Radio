@@ -61,7 +61,7 @@
 				تمت المشاهدة مؤخرا
 			</li>
 			<li>
-				<i class="fa fa-pencil-square"></i>
+				<i class="fa fa-clock-o"></i>
 				أخر الإضافات
 			</li>
 		</ul>

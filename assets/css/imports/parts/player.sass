@@ -1,13 +1,19 @@
 .player
 	background: transparentize($color_dark_555, .3)
 	color: #FFF
-	padding: 10px
+	padding: 10px 15px
 	width: 500px
 	float: left
 	display: flex
 	border-radius: 20px
 	.current-time, .total-time
 		margin: auto
+	.current-time
+		border-left: 2px solid #FFF
+		padding-left: 5px
+	.total-time
+		border-right: 2px solid #FFF
+		padding-right: 5px
 	.buffer
 		display: inline-block
 		width: 75%

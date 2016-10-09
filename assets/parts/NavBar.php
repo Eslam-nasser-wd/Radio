@@ -19,13 +19,10 @@
 			</div>
 			<div class="menu">
 				<ul class="nav">
-					<a href="#"><li>الرئيسية</li></a>
-					<a href="#"><li>من نحن</li></a>
-					<a href="#"><li>البرامج</li></a>
-					<!-- <a href="#"><li>المذيعين</li></a> -->
-					<!-- <a href="#"><li>الاخبار</li></a> -->
-					<!-- <a href="#"><li>سوشيال</li></a> -->
-					<a href="#"><li>تواصل معنا</li></a>
+					<a href="index.php"><li>الرئيسية</li></a>
+					<a href="about.php"><li>من نحن</li></a>
+					<a href="programmes.php"><li>البرامج</li></a>
+					<a href="contact.php"><li>تواصل معنا</li></a>
 				</ul>
 			</div>
 		</div>
