@@ -83,10 +83,11 @@ $(document).ready(function(){
 
 			});
 		}
-	}fix();
+	}
+	// fix();
 	
 	$(window).resize(function(){
-		fix();
+		// fix();
 	});
 	
 });
