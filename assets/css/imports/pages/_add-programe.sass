@@ -1,5 +1,5 @@
 // contact
-#contact
+#addProgrameForm
 	background: #FFF
 	padding: 10px
 	box-shadow: $shadow_flat
@@ -20,30 +20,51 @@
 			transform: translateX(50%)
 		&:after
 			bottom: -12px
-	.details
-		float: right
-		width: 40%
+	.table
+		width: 90%
 		padding-right: 20px
-		.heading
-			font-weight: bold
-			display: inline-block
-			margin-top: 20px
-			> i
-				color: $color_yellow
+		margin: 20px auto
+		margin-top: 100px
 		ul
 			list-style-type: none
 			padding: 0
 			margin: 0
-			margin-right: 10px
-			padding-top: 10px
 			li
-				margin-top: 5px
-				&:before
-					content: ' - '
+				padding: 10px 15px
+				display: flex
+			.table-head
+				width: 100%
+				background: transparentize($color_light, .95)
+				border-bottom: 1px solid transparentize($color_dark_333, .5)
+			.table-row
+				transition: .14s
+				border:
+					bottom: 1px solid transparentize(#EEE, .4)
+					left: 1px solid transparentize(#EEE, .4)
+					right: 1px solid transparentize(#EEE, .4)
+				&:hover
+					background: transparentize(#EEE, .8)
+			.programe-name
+				margin: auto
+				margin-right: 0
+			.programe-remove
+				margin: auto
+				margin-left: 0
+				button
+					background: $color_light
+					color: #FFF
+					border: none
+					padding: 10px 30px
+					&:hover
+						background: $color_light / .9
+						cursor: pointer
+
+
+
 
 	.form
-		width: 60%
-		float: right
+		width: 45%
+		margin: auto
 		form
 			label
 				display: none
@@ -55,15 +76,15 @@
 				box-shadow: none
 				border-bottom: 2px solid #DDD
 				transition: .2s
-				padding: 5px 10px
+				padding: 10px 10px
 				resize: vertical
 				&:focus
 					outline: 0
 					border-bottom: 2px solid $color_light
 			button[type="submit"]
 				// float: left
-				display: inline-block
-				margin-top: 10px
+				display: block
+				margin: 30px auto
 				background: $color_light
 				color: #FFF
 				border: 0
